@@ -1,0 +1,32 @@
+﻿<Window x:Class="prjResidence.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prjResidence"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1082">
+    <Grid>
+        <Label x:Name="lblPerson" Content="Add person name&#xD;&#xA;" HorizontalAlignment="Left" Margin="21,42,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSurname" Content="Add surname" HorizontalAlignment="Left" Margin="21,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEmail" Content="Add email address" HorizontalAlignment="Left" Margin="21,104,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCellNum" Content="Add cell number" HorizontalAlignment="Left" Margin="21,135,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblYear" Content="Enter year of move in" HorizontalAlignment="Left" Margin="21,166,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPerson" HorizontalAlignment="Left" Margin="247,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtPerson_TextChanged"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Margin="247,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtSurname_TextChanged"/>
+        <TextBox x:Name="txtCellNum" HorizontalAlignment="Left" Margin="247,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtCellNum_TextChanged"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="247,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtEmail_TextChanged"/>
+        <TextBox x:Name="txtYear" HorizontalAlignment="Left" Margin="247,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtYear_TextChanged"/>
+        <Button x:Name="btnAdd" Content="Add person" HorizontalAlignment="Left" Margin="241,334,0,0" VerticalAlignment="Top" Click="btnAdd_Click"/>
+        <Label x:Name="lblComplaint" Content="Would you like to add a complaint?" HorizontalAlignment="Left" Margin="21,197,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtComplaint" HorizontalAlignment="Left" Margin="247,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="84" TextChanged="txtComplaint_TextChanged"/>
+        <ListBox x:Name="lstPeople" Margin="614,39,312,173"/>
+        <ListBox x:Name="lstComplaints" Margin="822,39,104,173"/>
+        <Label Content="Adding people" HorizontalAlignment="Left" Margin="125,3,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="List of people" HorizontalAlignment="Left" Margin="649,8,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="List of people's complaints" HorizontalAlignment="Left" Margin="820,8,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblPerson_Copy" Content="Add ID&#xA;" HorizontalAlignment="Left" Margin="21,21,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Margin="247,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtID_TextChanged"/>
+
+    </Grid>
+</Window>
